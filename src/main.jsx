@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <App/>
     <Toaster
-      position="bottom-center"
+      position="top-center"
       reverseOrder={false}
      
     />

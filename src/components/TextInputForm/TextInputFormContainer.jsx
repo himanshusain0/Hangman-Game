@@ -16,7 +16,9 @@ function TextInputFormContainer() {
         if(value) {
             // if we have something in value then we want to go to the play page
             navigate(`/play`, { state: { wordSelected: value } })
-            toast.success("Success")
+            toast('Good Job!', {
+                icon: '👏',
+              });
         }
     }
 
