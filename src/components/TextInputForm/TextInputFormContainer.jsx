@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TextInputForm from "./TextInputForm";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 function TextInputFormContainer() {
 
@@ -14,7 +15,8 @@ function TextInputFormContainer() {
         console.log("Form submitted", value);
         if(value) {
             // if we have something in value then we want to go to the play page
-            navigate(`/play`, { state: { wordSelected: value } });
+            navigate(`/play`, { state: { wordSelected: value } })
+            toast.success("Success")
         }
     }
 
@@ -53,7 +55,7 @@ function TextInputFormContainer() {
     // }, [inputType]);
 
     return (
-        <>
+        <div className="">
             <TextInputForm 
                 inputType={inputType}
                 handleFormSubmit={handleFormSubmit} 
@@ -61,7 +63,7 @@ function TextInputFormContainer() {
                 handleShowHideClick={handleShowHideClick}
             />
 
-        </>
+        </div>
         
     );
 }

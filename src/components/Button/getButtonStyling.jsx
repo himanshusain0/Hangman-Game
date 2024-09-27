@@ -1,7 +1,7 @@
 
 function getButtonStyling(styleType) {
     if(styleType === "primary") {
-        return "bg-blue-500";
+        return "m-5  bg-transparent hover:bg-black  text-black font-bold hover:text-white py-2 px-4 border border-white  hover:border-transparent rounded ";
     } else if (styleType === "secondary") {
         return "bg-gray-500";
     } else if(styleType === "error") {
@@ -9,7 +9,7 @@ function getButtonStyling(styleType) {
     } else if(styleType === "success") {
         return "bg-green-500";
     } else if(styleType === "warning") {
-        return "bg-yellow-500";
+        return "m-5  bg-transparent hover:bg-black   font-bold hover:text-white py-2 px-4 border border-white  hover:border-transparent rounded ";
     }
 }
 

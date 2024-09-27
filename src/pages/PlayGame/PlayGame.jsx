@@ -14,7 +14,7 @@ function PlayGame(){
 
     return(
         <>
-        <div>
+        <div className="bg-red-950">
             <h1>Play Game</h1>
             <MaskedText text={wordSelected} usedLetters={usedLetters}/>
             <hr />
